@@ -1,0 +1,27 @@
+.titulo{
+    text-align:center;
+}
+
+#primer-parrafo, .importante.parrafo{
+    font-family: serif;
+}
+
+p, #primer-parrafo{
+    background-color:#CEE;
+}
+
+p, #primer-parrafo, em{
+color:#933;
+}
+
+a{
+    outline: 1px solid #333;
+}
+
+html body p.fuente.parrafo{
+    opacity: 100%;
+}
+
+p:not([id]) {
+	text-shadow: none
+}
