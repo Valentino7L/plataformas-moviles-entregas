@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TP-7: Funciones en JavaScript</title>
+</head>
+<body>
+<p>Completar con la implementación de las funciones correspondientes</p>
+<script type="text/javascript">
+// 1
+function suma(num1, num2) {
+    return num1 + num2;
+}
+
+// 2
+function elevarAlCubo(num) {
+    return Math.pow(num, 3);
+}
+
+// 3
+function restoDivisionEntera(dividendo, divisor) {
+    return dividendo % divisor;
+}
+
+// 4
+function numeroPi() {
+    return Math.PI;
+}
+
+// 5
+function numeroRandom() {
+    return Math.random();
+}
+
+// 6
+function numeroRandomDesdeHasta(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 7
+function esPar(num) {
+    return num % 2 === 0;
+}
+
+// 8
+function esPositivo(num) {
+    return num > 0;
+}
+
+// 9
+function clasificarNumero(num) {
+    let paridad = esPar(num) ? "par" : "impar";
+    let signo = num > 0 ? "positivo" : (num < 0 ? "negativo" : "no positivo");
+    return `El número ${num} es ${paridad} y ${signo}.`;
+}
+
+// 10
+function transformarMayuscula(texto) {
+    return texto.toUpperCase();
+}
+
+// 11
+function primeraLetra(texto) {
+    return texto.charAt(0);
+}
+
+// 12
+function sinPrimeraLetra(texto) {
+    return texto.slice(1);
+}
+
+// 13
+function primeraLetraMayuscula(texto) {
+    return texto.charAt(0).toUpperCase() + texto.slice(1);
+}
+
+// 14
+function terminaCon(palabra, terminacion) {
+    return palabra.endsWith(terminacion);
+}
+
+// 15
+function palabraInvertida(palabra) {
+    return palabra.split("").reverse().join("");
+}
+
+</script>
+</body>
+</html>
